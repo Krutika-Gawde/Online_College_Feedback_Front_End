@@ -1,0 +1,25 @@
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(120deg,#3498db,#8e44ad);
+}
+table {
+	font-family: arial, sans-serif;
+	width: 50%;
+
+	left: 30%;
+	margin: 0 auto;
+	border-collapse: collapse;
+
+}
+td, th {
+	
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+
+
+

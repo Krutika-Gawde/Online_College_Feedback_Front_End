@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylenew.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+      <form action="index.html" class="login-form">
+        <h1>LOGIN</h1>
+
+        <!-- <div class="txtb">
+         <label class="col-sm-4 control-label">DEPARTMENT</label>
+         <input type="text">
+          <span data-placeholder="Department"></span>-->
+          <div class="box">
+          <select name="DEPARTMENT" class="form-control" required>
+            
+    <option>DEPARTMENT</option>
+    <option value="ELECTRONICS">ELECTRONICS</option>
+    <option value="CIVIL">CIVIL</option>
+    <option value="MECHANICAL">MECHANICAL</option>
+     <option value="INFORMATION_TECHNOLOGY">INFORMATION TECHNOLOGY</option>
+      <option value="COMPUTER">COMPUTER</option>
+       <option value="CHEMICAL">CHEMICAL</option>
+       <option value="HUMANITY">HUMANITY & SCIENCES</option>
+  </select>
+        </div>
+
+
+        <div class="txtb">
+          <input type="password">
+          <span data-placeholder="Password"></span>
+        </div>
+
+        <input type="submit" class="logbtn" value="Login">
+
+        
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+
+      </script>
+
+
+  </body>
+</html>
